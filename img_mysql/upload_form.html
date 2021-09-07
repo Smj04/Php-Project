@@ -1,0 +1,30 @@
+<style>
+    @font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    body{
+        text-align: center;
+        background-color: rgb(255, 204, 204);
+        font-family: 'GowunDodum-Regular';
+    }
+    
+    button{
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.651);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-family: 'GowunDodum-Regular';
+    }
+</style>
+<h1>🤍이미지 파일 업로드🤍</h1>
+<form method="post" action="upload2.php" enctype="multipart/form-data">
+<meta charset="utf-8">
+
+<p>파일 : <input type="file" name="userfile"><button type="submit">선택완료</button></p>
+
+<!-- <a href="show.php">이미지 보기</a> -->
+</form>

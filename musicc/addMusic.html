@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음악추가</title>
+    <style>
+        
+      table{
+            text-align: center;
+            margin: 30px auto;
+        }
+        td{
+            border-top: 1px solid black;
+            padding: 10px;
+        }
+        input:focus{
+
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="add.php" method="POST">
+        <table>
+            <tr>
+                <tr>
+                    <td>
+                        <input type="text"  name="title" placeholder="Title">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name = "singer" placeholder="Singer">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name = "genre" placeholder="Genre">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" name = "price" placeholder="Price">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name = "pw" placeholder="PassWord">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="date" name = "date" placeholder="date">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: center; display: blcok; margin: 0 auto;" >
+                         <button type="submit" style="background-color : blue; border: none; border-radius: 30px; color: white; padding: 15px;">전송</button></td>
+                    </tr>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

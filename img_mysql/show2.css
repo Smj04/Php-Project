@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    text-align: center;
+    background-color: rgb(255, 204, 204);
+    font-family: 'GowunDodum-Regular';
+}
+table{
+    border-collapse:collapse;
+    width: 100%;
+    border: 2px solid #444444;
+    background-color: rgba(255, 255, 255, 0.651);
+    text-align: center;
+}
+td {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+    
+  }
+tr{
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}

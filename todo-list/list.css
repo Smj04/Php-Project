@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'HSYuji-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: rgba(223, 212, 199, 0.432);
+    font-family: 'HSYuji-Regular';
+    text-align: center;
+    color: black;
+    margin: auto;
+    
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+    font-family: 'HSYuji-Regular';
+    margin-top: 30px;
+}
+td{
+    border:1px solid black;
+    padding: 20px;
+
+    
+}
+a{
+    text-decoration: none;
+    float: right;   
+    font-family: 'HSYuji-Regular';
+    color: black;
+}
