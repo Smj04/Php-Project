@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+   
+
+    font-family: 'GowunDodum-Regular';
+}
+
+table{
+    border-collapse:collapse;
+    width: 100%;
+    border: 2px solid #444444;
+   
+    text-align: center;
+}
+td {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+    
+  }
+tr{
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}

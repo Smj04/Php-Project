@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK</title>
+    <style>
+        *{
+            text-align: center;
+            margin: 20px auto;
+        }
+        table{
+            text-align: center;
+
+        }
+      
+        input:focus{
+
+            background-color: rgb(255, 174, 145);
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+    <body>
+        <h1>📕책 추가📙</h1>
+    <form action="insert.php" method="POST"  enctype="multipart/form-data">
+        <table>
+            <tr >
+                
+                
+                <td>🧾제목 : <input type="text" name="title"></td>
+            </tr>
+
+            <tr>
+                
+                <td>👨‍🦲저자 : <input type="text" name="author"></td>
+            </tr>
+            <tr>
+                
+                <td>💰가격 : <input type="text" name="price"></td>
+            </tr>
+            <tr>
+                
+                <td>이미지 : <input type="file" name="img"></td>
+            </tr>
+            <tr>
+                <td><button type="submit" style="border: 0; color: white; background-color: black; border-radius: 30px;" >입력완료</button></td>
+            </tr>
+            <tr>
+                <td><a href="index.php">-목록보기-</a></td>
+            </tr>
+        </table>
+        
+    </form>
+</body>
+</html>
