@@ -1,3 +1,9 @@
+<?php
+$idx=$_GET['idx'];
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +27,7 @@
             text-align: center;
 
         }
-        
+      
         input:focus{
 
             background-color: rgb(255, 174, 145);
@@ -32,39 +38,28 @@
         }
     </style>
 </head>
+
     <body>
         
-        <h1 style="color:orange">책 추가</h1>
-                <form action="insert.php" method="POST"  enctype="multipart/form-data">
-                    <table><tr >
-                <td>제목 : <input type="text" name="title"></td>
+        <h1 style="color:orange">관리자 확인</h1>
+   
+            
+                
+        <form action="delete.php?idx=<?php echo $idx ?>" method="POST">
+        <table>
+                <tr>
+                <td>아이디 : <input type="text" name="userid" value="admin"></td>
             </tr>
 
             <tr>
                 
-                <td>저자 : <input type="text" name="author"></td>
-            </tr>
-            <tr>
-                
-                <td>가격 : <input type="text" name="price"></td>
-            </tr>
-            <tr>
-                
-                <td>상세정보 : <input type="text" name="description"></td>
-            </tr>
-            <tr>
-                
-                <td>이미지 : <input type="file" name="img"></td>
+            <td>비밀번호 : <input type="password" name="pass" value="1111"></td>
+            <!-- <input type="hidden" name="idx" value="'<?php echo $idx ?>'" > -->
             </tr>
            
-            <tr>
-                <td><button type="submit" style="border: 0; color: black; background-color: orange; border-radius: 30px;" >입력완료</button></td>
-            </tr>
-            <tr>
-                <td><a href="index.php">-목록보기-</a></td>
-            </tr>
         </table>
-        
+        <button type="submit" style="border: 0; color: black; background-color: orange; border-radius: 30px;" >입력완료</button>
     </form>
+    <a href="index.php">-목록보기-</a>
 </body>
 </html>

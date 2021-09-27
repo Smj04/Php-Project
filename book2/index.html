@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메뉴</title>
+    <title>Menu</title>
     <style>
+        @font-face {
+        font-family: 'HCRDotum';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
         *{
             padding: 0;
             margin:0;
+            font-family: 'HCRDotum';
         }
         body{
-            
+            background-color: rgb(231, 231, 231);
             text-align: center;
         }
         a{
-            
-            float: left;
             text-decoration: none;
             color: black;
             padding: 10px;
@@ -26,15 +31,78 @@
             color: gray;
             transition: 0.6s;
         }
-
+        h4{
+            color:rgb(82, 79, 79)
+        }
+        footer{
+            background-color: rgb(63, 62, 62);
+            padding: 15px;
+        }
+        .footer-icons{
+            width: 30px;
+            height: 30px;
+        }
+        
+        .footer-li{
+            display: inline-block;
+            list-style:none;
+           list-style-type: none;
+           
+        }
     </style>
 </head>
-<body>
-    <a href="../book2/index.php">book2</a>
-    <a href="../todo-list/index.html">todo리스트</a>
-    <a href="../img_mysql/upload_form.html">이미지업로드</a>
-    <a href="../musicc/index.html">Music</a>
-    
 
+<body>
+    <ul>
+    <li><a href="../book2/index.html"><img src="img/logo.png" alt="logo" width="140px" height="80px"></a></li>
+    <a href="../book2/index.php">Book</a>
+    <a href="../todo-list/index.html">Todo-list</a>
+    <a href="../img_mysql/upload_form.html">ImgUploader</a>
+    <a href="../musicc/index.html">Music</a>
+</ul>
+<div class="container">
+   
+        <div class="row" style="margin-top:50px;">
+          <div class="col" style="padding: 10px;">
+            <img src="img/book.JPG" alt="book" width="300px" height="130px">
+            <img src="img/book-check.JPG" alt="book-check" width="300px" height="130px">
+            <img src="img/book-add.JPG" alt="book-add" width="300px" height="130px">
+            <h4>Book</h4>
+          </div>
+
+          <div class="col" style="margin-top:100px;">
+            <img src="img/todo-list.JPG" alt="todo-list" width="300px" height="130px">
+            <img src="img/todo-list-check.JPG" alt="todo-list" width="300px" height="130px">
+            <img src="img/todo-list-list.JPG" alt="todo-list" width="300px" height="130px">
+            <h4>Todo-list</h4>
+            <div class="col" style="margin-top:100px;">
+                <img src="img/imguploader.JPG" alt="imguploader" width="300px" height="130px">
+                <img src="img/imguploader-list.JPG" alt="imguploader" width="300px" height="130px">
+               
+                <h4>ImgUploader</h4>
+          </div>
+          <div class="col" style="margin-top:100px;">
+            <img src="img/music.JPG" alt="music" width="300px" height="130px">
+            <img src="img/music-add.JPG" alt="music" width="300px" height="130px">
+            <img src="img/music-list.JPG" alt="music" width="300px" height="130px">
+            <h4>Music</h4>
+      </div>
+         
+        </div>
+      
+  </div>
+  <footer style="margin-top:100px;">
+    <a href="../book2/index.html"><img src="img/logo.png" alt="logo" width="150px" height="90px"></a>
+    <ul>
+        <li class="footer-li"><a href="https://www.facebook.com/profile.php?id=100015844990678"><img class ="footer-icons" src="img/facebook.png" alt="facebook"></a></li>
+        <li class="footer-li"><a href="https://www.instagram.com/s.0llar/"><img class ="footer-icons" src="img/instagram.png" alt="instagram"></a></li>
+        <li class="footer-li"><a href="https://github.com/waawa04"><img class ="footer-icons" src="img/github.png" alt="github"></a></li>
+    </ul>
+    <br>
+    <p>Name : MinjeoungSeo</p>
+    <p>Phone : 02-1234-5678</p>
+    <p>minjungseo04@gmail.com</p><br>
+    <b><p>Contact for more information</p></b>
+  </footer>
     </body>
 </html>
